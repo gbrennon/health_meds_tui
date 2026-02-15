@@ -9,6 +9,9 @@ This tool is especially useful for individuals who need to track daily medicatio
 - Mark medications as daily
 - Track medication stock levels
 
+## Project Structure
+- `src/core/`: Contains core domain entities and repository interfaces (ports) for Medication and MedicationsStock.
+
 ## Motivation
 
 This project was created to assist people like myself who have brain dysplasia.

@@ -1,4 +1,4 @@
-use crate::medication::Medication;
+use crate::core::medication::Medication;
 use std::collections::HashMap;
 
 /// Aggregate root for managing medication stock and registration.
@@ -18,7 +18,7 @@ impl MedicationsStock {
 
     /// Adds a medication to the stock registry.
     pub fn add_medication(&mut self, med: Medication) {
-        self.medications.insert(med.name.clone(), med);
+        self.medications.insert(med.name.clone(), med.clone());
         self.stock.insert(med.name.clone(), 0);
     }
 
@@ -33,7 +33,7 @@ impl MedicationsStock {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::medication::Medication;
+    use crate::core::medication::Medication;
 
     #[test]
     fn test_new_and_add_medication() {
