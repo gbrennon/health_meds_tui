@@ -24,5 +24,19 @@ To get started, clone the repository and run the application using Cargo:
 cargo run
 ```
 
+## Installation
+Install dependencies using Cargo:
+
+```sh
+cargo build
+```
+
+## Running Tests
+Run tests with:
+
+```sh
+cargo test
+```
+
 ## License
 MIT License
