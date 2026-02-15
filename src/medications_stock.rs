@@ -18,7 +18,7 @@ impl MedicationsStock {
 
     /// Adds a medication to the stock registry.
     pub fn add_medication(&mut self, med: Medication) {
-        self.medications.insert(med.name.clone(), med.clone());
+        self.medications.insert(med.name.clone(), med);
         self.stock.insert(med.name.clone(), 0);
     }
 
