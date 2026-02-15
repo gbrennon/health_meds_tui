@@ -1,5 +1,5 @@
 /// Represents a medication with its name, substance, and dose.
-#[derive(Clone)]
+#[derive(Clone, Debug, PartialEq)]
 pub struct Medication {
     pub name: String,
     pub substance: String,
